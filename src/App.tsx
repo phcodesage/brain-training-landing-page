@@ -1,5 +1,6 @@
-import { Brain, Calendar, Clock, DollarSign, Mail, MapPin, Phone } from 'lucide-react';
+import { Brain, Calendar, Clock, Mail, MapPin, Phone } from 'lucide-react';
 import BrainHeroImg from './assets/brain_hero.png';
+import ExceedLogo from './assets/exceed-new-logo-2026.png';
 import Lenis from 'lenis';
 import { useEffect } from 'react';
 
@@ -27,12 +28,15 @@ function App() {
 
 
       <main>
-        <section className="relative bg-gradient-to-br from-gray-50 to-white py-8 lg:py-12 overflow-hidden">
+        <section className="relative bg-white pt-4 pb-8 lg:pt-6 lg:pb-12 overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand-red opacity-10 rounded-full -mr-32 -mt-32"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-navy opacity-5 rounded-full -ml-48 -mb-48"></div>
 
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="max-w-6xl mx-auto">
+              <div className="flex justify-center">
+                <img src={ExceedLogo} alt="Exceed Learning Center" className="h-64 w-auto object-contain" />
+              </div>
               <div className="bg-brand-navy rounded-3xl p-6 lg:p-8 shadow-2xl mb-6">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8">
                   <div className="flex-1 order-2 lg:order-1">
