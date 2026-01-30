@@ -34,9 +34,7 @@ function App() {
 
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="max-w-6xl mx-auto">
-              <div className="flex justify-center">
-                <img src={ExceedLogo} alt="Exceed Learning Center" className="h-64 w-auto object-contain" />
-              </div>
+
               <div className="bg-brand-navy rounded-3xl p-6 lg:p-8 shadow-2xl mb-6">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8">
                   <div className="flex-1 order-2 lg:order-1">
@@ -50,11 +48,16 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="flex-1 order-1 lg:order-2 flex justify-center lg:justify-end">
+                  <div className="flex-1 order-1 lg:order-2 flex justify-between lg:justify-end items-center gap-4">
+                    <img
+                      src={ExceedLogo}
+                      alt="Exceed Learning Center"
+                      className="w-40 h-40 lg:w-80 lg:h-80 object-contain"
+                    />
                     <img
                       src={BrainHeroImg}
                       alt="Glowing Brain Illustration"
-                      className="w-48 h-48 lg:w-80 lg:h-80 object-contain filter drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] animate-pulse-slow"
+                      className="w-40 h-40 lg:w-80 lg:h-80 object-contain filter drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] animate-pulse-slow"
                     />
                   </div>
                 </div>
@@ -216,6 +219,12 @@ function App() {
                   <Mail className="w-5 h-5 text-brand-red" />
                   <a href="mailto:exceedlearningcenterny.com" className="hover:text-brand-red transition-colors">
                     exceedlearningcenterny.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Mail className="w-5 h-5 text-brand-red" />
+                  <a href="mailto:Adultclasses@exceedlearningcenterny.com" className="hover:text-brand-red transition-colors">
+                    Adultclasses@exceedlearningcenterny.com
                   </a>
                 </div>
               </div>
