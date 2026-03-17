@@ -36,28 +36,28 @@ function App() {
             <div className="max-w-6xl mx-auto">
 
               <div className="bg-brand-navy rounded-3xl p-6 lg:p-8 shadow-2xl mb-6">
-                <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8">
-                  <div className="flex-1 order-2 lg:order-1">
+                <div className="grid gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:gap-10">
+                  <div className="order-2 lg:order-1 lg:min-w-0">
                     <h2 className="text-3xl lg:text-6xl font-display font-black text-white mb-2 lg:mb-4 leading-tight text-center lg:text-left">
                       BRAIN HEALTH<br />COURSE
                     </h2>
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 mb-4 lg:mb-0">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 mb-4 lg:mb-0 lg:max-w-xl xl:max-w-2xl">
                       <p className="text-white font-sans text-sm lg:text-base leading-relaxed">
                         This engaging program uses evidence-based neuroscience and cognitive psychology to sharpen your memory, improve focus, and boost problem-solving skills.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex-1 order-1 lg:order-2 flex justify-between lg:justify-end items-center gap-4">
+                  <div className="order-1 lg:order-2 grid grid-cols-2 items-center gap-4 lg:gap-6 lg:max-w-[36rem] lg:justify-self-end">
                     <img
                       src={ExceedLogo}
                       alt="Exceed Learning Center"
-                      className="w-40 h-40 lg:w-80 lg:h-80 object-contain"
+                      className="w-full h-auto max-h-52 lg:max-h-72 object-contain"
                     />
                     <img
                       src={BrainHeroImg}
                       alt="Glowing Brain Illustration"
-                      className="w-40 h-40 lg:w-80 lg:h-80 object-contain filter drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] animate-pulse-slow"
+                      className="w-full h-auto max-h-52 lg:max-h-72 object-contain filter drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] animate-pulse-slow"
                     />
                   </div>
                 </div>
@@ -103,7 +103,7 @@ function App() {
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-3 text-brand-navy">
                         <Calendar className="w-5 h-5 flex-shrink-0" />
-                        <p className="font-gotham font-bold text-base lg:text-lg">Starting February 24</p>
+                        <p className="font-gotham font-bold text-base lg:text-lg">Coming Soon</p>
                       </div>
                       <div className="flex items-center gap-3 text-brand-navy">
                         <Clock className="w-5 h-5 flex-shrink-0" />
@@ -234,7 +234,7 @@ function App() {
               <h5 className="font-gotham font-bold text-xl mb-4">Course Details</h5>
               <ul className="space-y-2 font-sans text-sm">
                 <li>8-week program</li>
-                <li>Starting February 24, 2026</li>
+                <li>Coming Soon</li>
                 <li>Every Tuesday at 6:00 PM</li>
                 <li>60-75 minute sessions</li>
                 <li>Early bird pricing available</li>
