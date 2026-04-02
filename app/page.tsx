@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 export default function Home() {
   const today = new Date();
-  const earlyBirdDeadline = new Date('2026-02-10');
+  const earlyBirdDeadline = new Date('2026-04-10');
   const isEarlyBird = today < earlyBirdDeadline;
   const price = 729;
   const discount = isEarlyBird ? 100 : 0;
@@ -100,7 +100,7 @@ export default function Home() {
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-3 text-brand-navy">
                         <Calendar className="w-5 h-5 flex-shrink-0" />
-                        <p className="font-gotham font-bold text-base lg:text-lg">Starts Sept 8, 2026</p>
+                        <p className="font-gotham font-bold text-base lg:text-lg">Starts April 28, 2026</p>
                       </div>
                       <div className="flex items-center gap-3 text-brand-navy">
                         <Clock className="w-5 h-5 flex-shrink-0" />
@@ -124,7 +124,7 @@ export default function Home() {
                           <div className="bg-brand-red rounded-lg px-3 py-2 inline-block">
                             <p className="text-white font-gotham font-bold text-xs">Early bird price</p>
                             <p className="text-white font-display font-black text-2xl">${discount} OFF</p>
-                            <p className="text-white font-sans text-[10px]">When registered before Feb 10</p>
+                            <p className="text-white font-sans text-[10px]">When registered before April 10</p>
                           </div>
                         )}
 
