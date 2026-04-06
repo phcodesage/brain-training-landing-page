@@ -9,6 +9,15 @@ export const metadata: Metadata = {
     description: 'Sharpen your memory, improve focus, and boost problem-solving skills with our 8-week Brain Health Course.',
     type: 'website',
   },
+
+  icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
