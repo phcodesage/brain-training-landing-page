@@ -228,7 +228,7 @@ export default function Home() {
               <div>
                 <p className="font-gotham font-bold text-sm uppercase tracking-wide">Email Address:</p>
                 <a
-                  href="mailto:Adultclasses@exceedlearningcenterny.com"
+                  href="mailto:adultsprograms@exceedlearningcenterny.com"
                   className="font-sans text-base underline hover:text-brand-red transition-colors"
                 >
                   Email us directly [+]
