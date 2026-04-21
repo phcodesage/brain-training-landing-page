@@ -3,14 +3,18 @@
 import { Brain, Calendar, Clock, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Lenis from 'lenis';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import PaymentModal, { calcCardPrice } from './PaymentModal';
 
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState(false);
   const today = new Date();
   const earlyBirdDeadline = new Date('2026-04-10');
   const isEarlyBird = today < earlyBirdDeadline;
   const price = 729;
   const discount = isEarlyBird ? 100 : 0;
+  const cashPrice = `$${price}`;
+  const stripeLink = 'https://buy.stripe.com/3cI5kw5u48oa3tL2SfdfG0d';
 
   useEffect(() => {
     const lenis = new Lenis({ autoRaf: true });
@@ -19,6 +23,14 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+      <PaymentModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        courseName="Brain Training Course"
+        cashPrice={cashPrice}
+        cardPrice={calcCardPrice(cashPrice)}
+        stripeLink={stripeLink}
+      />
       <main>
         <section className="relative bg-white pt-4 pb-8 lg:pt-6 lg:pb-12 overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand-red opacity-10 rounded-full -mr-32 -mt-32"></div>
@@ -136,14 +148,12 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <a
-                      href="https://buy.stripe.com/3cI5kw5u48oa3tL2SfdfG0d"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <button
+                      onClick={() => setModalOpen(true)}
                       className="block w-full text-center bg-brand-red hover:bg-red-700 text-white font-gotham font-bold py-3 px-8 rounded-xl text-lg transition-all transform hover:scale-105 shadow-lg mt-4"
                     >
-                      ENROLL NOW
-                    </a>
+                      ENROLL NOW — CHOOSE PAYMENT
+                    </button>
                   </div>
                 </div>
 
