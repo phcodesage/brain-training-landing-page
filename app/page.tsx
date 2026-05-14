@@ -112,7 +112,7 @@ export default function Home() {
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-3 text-brand-navy">
                         <Calendar className="w-5 h-5 flex-shrink-0" />
-                        <p className="font-gotham font-bold text-base lg:text-lg">Starts April 28, 2026</p>
+                        <p className="font-gotham font-bold text-base lg:text-lg">Starts June 20, 2026</p>
                       </div>
                       <div className="flex items-center gap-3 text-brand-navy">
                         <Clock className="w-5 h-5 flex-shrink-0" />
