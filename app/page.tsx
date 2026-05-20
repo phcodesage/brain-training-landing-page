@@ -14,7 +14,7 @@ export default function Home() {
   const price = 729;
   const discount = isEarlyBird ? 100 : 0;
   const cashPrice = `$${price}`;
-  const stripeLink = 'https://buy.stripe.com/3cI5kw5u48oa3tL2SfdfG0d';
+  const stripeLink = 'https://securelink-prod.valorpaytech.com:4430/?redirect=1&uid=86f2b44a-5305-11f1-a8e1-12a0879a85b1';
 
   useEffect(() => {
     const lenis = new Lenis({ autoRaf: true });
