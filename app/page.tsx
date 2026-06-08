@@ -493,7 +493,7 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-xs text-slate-400 font-sans">Start Date</p>
-                        <p className="text-sm sm:text-base font-gotham font-bold text-brand-navy">Starts June 20, 2026</p>
+                        <p className="text-sm sm:text-base font-gotham font-bold text-brand-navy">Starts July 8, 2026</p>
                       </div>
                     </div>
 
@@ -503,7 +503,7 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-xs text-slate-400 font-sans">Weekly Schedule</p>
-                        <p className="text-sm sm:text-base font-gotham font-bold text-brand-navy">Every Tuesday 6:00 PM</p>
+                        <p className="text-sm sm:text-base font-gotham font-bold text-brand-navy">Every Wednesday 6:00 PM</p>
                       </div>
                     </div>
 

@@ -5,7 +5,7 @@ export async function GET() {
   return NextResponse.json({
     course: 'Brain Health Course',
     duration: '8 weeks',
-    schedule: 'Every Tuesday at 6:00 PM',
+    schedule: 'Every Wednesday at 6:00 PM',
     price: 729,
     stripeLink: 'https://securelink-prod.valorpaytech.com:4430/?redirect=1&uid=86f2b44a-5305-11f1-a8e1-12a0879a85b1',
     spotsAvailable: true,

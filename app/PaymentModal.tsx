@@ -102,7 +102,7 @@ export default function PaymentModal({
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
       style={{ animation: "fadeIn 0.2s ease" }}
     >
-      <div className="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden flex flex-col max-h-[90vh]">
+      <div className={`bg-white rounded-3xl shadow-2xl w-full overflow-hidden flex flex-col max-h-[90vh] transition-all duration-300 ${step === "zelle" ? "max-w-md md:max-w-4xl" : "max-w-md"}`}>
         {/* Header */}
         <div className="px-6 py-5 flex items-center justify-between border-b bg-[#05264d]">
           <div>
