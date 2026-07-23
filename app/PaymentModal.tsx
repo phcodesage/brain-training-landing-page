@@ -121,15 +121,15 @@ export default function PaymentModal({
 
         {/* Price Note Banner */}
         <div className="bg-amber-50 border-b border-amber-200 px-6 py-3 flex flex-col gap-1">
-          <div className="flex items-center gap-2 text-sm font-semibold text-amber-800">
-            <Banknote className="w-4 h-4 shrink-0" />
-            Cash (Zelle): <span className="text-green-700">{cashPrice}</span>
-            <span className="text-amber-600 font-normal">— no extra fee</span>
+          <div className="flex items-center gap-2 text-sm font-bold text-amber-900">
+            <Banknote className="w-4 h-4 shrink-0 text-green-700" />
+            Cash (Zelle): <span className="text-green-700 font-extrabold">{cashPrice}</span>
+            <span className="text-amber-800 font-semibold">— no extra fee</span>
           </div>
-          <div className="flex items-center gap-2 text-sm font-semibold text-amber-800">
-            <CreditCard className="w-4 h-4 shrink-0" />
-            Card: <span className="text-[#d53033]">{cardPrice}</span>
-            <span className="text-amber-600 font-normal">— includes 4% processing fee</span>
+          <div className="flex items-center gap-2 text-sm font-bold text-amber-900">
+            <CreditCard className="w-4 h-4 shrink-0 text-[#d53033]" />
+            Card: <span className="text-[#d53033] font-extrabold">{cardPrice}</span>
+            <span className="text-amber-800 font-semibold">— includes 4% processing fee</span>
           </div>
         </div>
 
@@ -137,22 +137,22 @@ export default function PaymentModal({
           {/* STEP: Choose */}
           {step === "choose" && (
             <div className="space-y-3">
-              <p className="text-sm text-gray-600 mb-4">
-                Choose your preferred payment method below.
+              <p className="text-sm font-semibold text-slate-800 mb-4">
+                Choose your preferred payment method below:
               </p>
               {/* Cash / Zelle */}
               <button
                 onClick={() => setStep("zelle")}
-                className="w-full flex items-center gap-4 p-4 rounded-2xl border-2 border-green-200 bg-green-50 hover:border-green-400 hover:bg-green-100 transition-all group"
+                className="w-full flex items-center gap-4 p-4 rounded-2xl border-2 border-green-300 bg-green-50 hover:border-green-500 hover:bg-green-100 transition-all group shadow-sm"
               >
-                <div className="w-11 h-11 rounded-xl bg-green-600 flex items-center justify-center shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-green-700 flex items-center justify-center shrink-0 shadow-sm">
                   <Banknote className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-left">
-                  <p className="font-bold text-gray-900">Pay with Cash (Zelle)</p>
-                  <p className="text-sm text-gray-600">
-                    Send <strong className="text-green-700">{cashPrice}</strong> to{" "}
-                    <span className="text-green-700 font-medium">payments@exceedlearningcenterny.com</span>
+                  <p className="font-extrabold text-slate-900 text-base">Pay with Cash (Zelle)</p>
+                  <p className="text-sm font-medium text-slate-800">
+                    Send <strong className="text-green-700 font-bold">{cashPrice}</strong> to{" "}
+                    <span className="text-green-800 font-bold underline">payments@exceedlearningcenterny.com</span>
                   </p>
                 </div>
               </button>
@@ -160,16 +160,16 @@ export default function PaymentModal({
               {/* Card */}
               <button
                 onClick={handleCardPay}
-                className="w-full flex items-center gap-4 p-4 rounded-2xl border-2 border-blue-200 bg-blue-50 hover:border-blue-400 hover:bg-blue-100 transition-all group"
+                className="w-full flex items-center gap-4 p-4 rounded-2xl border-2 border-blue-300 bg-blue-50 hover:border-blue-500 hover:bg-blue-100 transition-all group shadow-sm"
               >
-                <div className="w-11 h-11 rounded-xl bg-[#05264d] flex items-center justify-center shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-[#05264d] flex items-center justify-center shrink-0 shadow-sm">
                   <CreditCard className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-left">
-                  <p className="font-bold text-gray-900">Pay by Card (Valor Pay)</p>
-                  <p className="text-sm text-gray-600">
-                    <strong className="text-[#d53033]">{cardPrice}</strong>{" "}
-                    <span className="text-gray-500">(includes 4% processing fee)</span>
+                  <p className="font-extrabold text-slate-900 text-base">Pay by Card (Valor Pay)</p>
+                  <p className="text-sm font-medium text-slate-800">
+                    <strong className="text-[#d53033] font-bold">{cardPrice}</strong>{" "}
+                    <span className="text-slate-700 font-semibold">(includes 4% processing fee)</span>
                   </p>
                 </div>
               </button>
